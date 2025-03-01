@@ -4,8 +4,9 @@ const ErrorDisplay = ({ error }) => {
   if (!error) return null;
 
   return (
-    <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mt-8">
-      {error}
+    <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-600">
+      <p className="font-semibold">Error:</p>
+      <p>{error}</p>
     </div>
   );
 };
